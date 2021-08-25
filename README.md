@@ -1,5 +1,7 @@
 # xed-vala-plugin
 
+My first attempt to write a Xed plugin in Vala
+
 ## Requirements
 
 To interface with xed some libraries are needed:
@@ -37,3 +39,9 @@ I still haven't tested install routine of the meson build so run <code>run.sh</c
 Run <code>xed</code> from the command line and go to <i>Preferences->Plugin</i> and enable the <code>ValaPlugin</code>. 
 You can verify the plugin preferences pane and information with the bottom buttons.
 And also you can see in the terminal the print messages of activation and deactivation (on close of xed window).
+
+## Credits
+
+Based on this Gedit Plugin example
+
+https://wiki.gnome.org/Projects/Vala/Gedit3PluginSample
