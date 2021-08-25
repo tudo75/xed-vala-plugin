@@ -2,7 +2,7 @@
 
 [CCode (cprefix = "Xed", gir_namespace = "Xed", gir_version = "1.0", lower_case_cprefix = "xed_")]
 namespace Xed {
-	[CCode (cheader_filename = "xed-app.h", type_id = "xed_app_get_type ()")]
+	[CCode (cheader_filename = "Xed-1.0.h", type_id = "xed_app_get_type ()")]
 	public class App : Gtk.Application, GLib.ActionGroup, GLib.ActionMap {
 		[CCode (has_construct_function = false)]
 		protected App ();
