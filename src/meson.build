@@ -21,13 +21,13 @@ libvalaplugin = library(
     vala_args: [
         '--abi-stability'
     ],
-    install: false,
+    install: true,
     # link_with: libxed,
     include_directories: include_dirs,
     install_rpath: join_paths(prefix, libdir, 'xed'),
     install_dir: [
-        false,
         join_paths(libdir, 'xed', 'plugins'),
+        true,
         vapidir,
         # g_ir_compiler.found()
     ]

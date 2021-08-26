@@ -5,6 +5,6 @@ i18n.merge_file(
     output: 'valaplugin.plugin',
     po_dir: join_paths(meson.source_root(), 'po'),
     type: 'desktop',
-    install: false,
+    install: true,
     install_dir: pluginslibdir,
 )

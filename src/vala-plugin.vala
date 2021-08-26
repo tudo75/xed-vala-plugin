@@ -1,6 +1,32 @@
+/*
+ * vala-plugin.vala
+ *
+ * Copyright 2021 Nicola Tudino
+ *
+ * This file is part of xed-vala-plugin.
+ *
+ * xed-vala-plugin is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, version 3 of the License.
+ *
+ * xed-vala-plugin is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with xed-vala-plugin.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * SPDX-License-Identifier: GPL-3.0-only
+ */
+
 
 namespace XedValaPugin {
 
+
+    /*
+    * Register plugin extension types
+    */
     [CCode (cname="G_MODULE_EXPORT peas_register_types")]
     [ModuleInit]
     public void peas_register_types (TypeModule module) 
@@ -13,6 +39,9 @@ namespace XedValaPugin {
         objmodule.register_extension_type (typeof (PeasGtk.Configurable), typeof (XedValaPugin.ConfigValaPlugin));
     }
     
+    /*
+    * Plugin
+    */
     public class ValaPlugin : Xed.ViewActivatable, Peas.ExtensionBase {
 
         public ValaPlugin () {
@@ -49,7 +78,7 @@ namespace XedValaPugin {
 
         public Gtk.Widget create_configure_widget () 
         {
-            var label = new Gtk.Label (" Xed Vala Pugin Example ");
+            var label = new Gtk.Label (" Xed Vala Pugin\nExample plugin for Xed written in Vala ");
             label.set_margin_top (10);
             label.set_margin_bottom (10);
             label.set_margin_start (10);

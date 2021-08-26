@@ -3,6 +3,7 @@ xed
 
 *.pot
 *.mo
+*.deb
 
 build
 config.*
