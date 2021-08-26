@@ -31,8 +31,15 @@ and remaining header files to
 
 ## Install
 
-I still haven't tested install routine of the meson build so run <code>run.sh</code> and then:
+Run <code>run.sh</code> to install with meson build system.
 
+Or if you want to do it manually:
+
+    meson setup build --prefix=/usr
+    ninja -C build -v com.github.tudo75.xed-vala-plugin-pot
+    ninja -C build -v com.github.tudo75.xed-vala-plugin-update-po
+    ninja -C build -v com.github.tudo75.xed-vala-plugin-gmo
+    ninja -C build -v
     sudo cp build/src/libValaPlugin.so /usr/lib/x86_64-linux-gnu/xed/plugins/libValaPlugin.so
     sudo cp data/valaplugin-plugin.desktop.in /usr/lib/x86_64-linux-gnu/xed/plugins/valaplugin.plugin
 
