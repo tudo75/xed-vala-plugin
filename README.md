@@ -40,6 +40,12 @@ Run <code>xed</code> from the command line and go to <i>Preferences->Plugin</i> 
 You can verify the plugin preferences pane and information with the bottom buttons.
 And also you can see in the terminal the print messages of activation and deactivation (on close of xed window).
 
+## Uninstall
+
+Run
+    
+    sudo ninja -C build -v uninstall
+
 ## Credits
 
 Based on this Gedit Plugin example
