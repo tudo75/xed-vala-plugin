@@ -49,9 +49,14 @@ And also you can see in the terminal the print messages of activation and deacti
 
 ## Uninstall
 
-Run
+If you installe through meson system:
     
     sudo ninja -C build -v uninstall
+    
+If you installed manually then:
+
+    sudo rm /usr/lib/x86_64-linux-gnu/xed/plugins/libValaPlugin.so
+    sudo rm /usr/lib/x86_64-linux-gnu/xed/plugins/valaplugin.plugin
 
 ## Credits
 
