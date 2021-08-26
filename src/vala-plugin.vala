@@ -49,7 +49,12 @@ namespace XedValaPugin {
 
         public Gtk.Widget create_configure_widget () 
         {
-            return new Gtk.Label (" Gedit 3.0 Example Vala Plugin ");
+            var label = new Gtk.Label (" Xed Vala Pugin Example ");
+            label.set_margin_top (10);
+            label.set_margin_bottom (10);
+            label.set_margin_start (10);
+            label.set_margin_end (10);
+            return label;
         }
     }
 
